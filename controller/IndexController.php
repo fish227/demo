@@ -52,7 +52,7 @@ function user_edit() {
 		SET `name`='$name',`email`='$email',`phone`='$phone',`updated_time`='$updated_time' 
 		WHERE `id`='$id'";
 	if ($conn->query($sqlt) === TRUE) {
-		echo "修改成功";
+		echo "修改成功!";
     } 
     else {
 		echo "Error: " . $sqlt . "<br>" . $conn->error;

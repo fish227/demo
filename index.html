@@ -1,171 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Demo Web</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link id="theme-style" rel="stylesheet" href="css/styles.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a><big><big><font face=微軟正黑體><b>RESUME</b></font></big></big></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download"><big><font face=微軟正黑體><b>履歷</b></font></big></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#connect"><big><font face=微軟正黑體><b>聯絡</b></font></big></a>
-                    </li>
-                           
-                    <li>
-                        <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i>  <span class="light"><b>TOP</b></span> 
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2><b style="color:red; font-family:標楷體; font-size:50px">履歷</b></h2>
-                    <!-- <table border=0>
-                        <td><img src="" width="350" height="350"></td>
-                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td><img src="" width="350" height="350"></td>
-                        <tr>
-                        <th></th>
-                        <th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                        <th></th>
-                    </table> -->
-                    <br>
-                    <a href="img/resume.pdf" class="btn btn-default btn-lg">Download Resume PDF</a>
-                </div>
-            </div>
-        </div>
-           
-    </section>
-
-    <!-- Connect Section -->
-    <section id="connect" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h1><b style="color:red; font-family:標楷體; font-size:50px">聯絡資料</b></h1>
-            <!-- <div class="row" style="margin-top:20px;"> -->
-                    <form action="controller/IndexController.php" method="POST">
-                        <!-- 給controller判斷用什麼function的依據(給鑰匙) -->
-                        <input type="hidden" name="mod_tab" value="user_add">
-                        <div class="col-md-8 col-md-offset-2 text-left">
-                            <div class="form-group">
-                                <label for="name">NAME：</label>
-                                <input type="text" id="name" name="name" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2 text-left">
-                            <div class="form-group">
-                                <label for="email">Email：</label>
-                                <input type="email" name="email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2 text-left">
-                            <div class="form-group">
-                                <label for="phone">Phone：</label>
-                                <input type="text" name="phone" class="form-control">
-                            </div>
-                            <button class="btn btn-success" type="submit">Submit</button>
-                        </div>
-                    </form> 
-                <!-- </div> -->
-                </div>
-            </div>
-        </section>
-
-    
-
-    <!-- Map Section -->
-    <!--div id="map"></div-->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-          <!--<img src="img/底線.gif" width="400" height="30"><img src="img/底線.gif" width="400" height="30">-->
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-
-</body>
-
+Name       : Axiom
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120729
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>Axiom by TEMPLATED</title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo">
+					<h1><a href="#">Axiom</a></h1>
+				</div>
+				<div id="menu">
+					<ul>
+						<li class="first current_page_item"><a href="#">Homepage</a></li>
+						<li><a href="#">Photos</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Links</a></li>
+						<li class="last"><a href="#">Contact</a></li>
+					</ul>
+					<br class="clearfix" />
+				</div>
+			</div>
+			<div id="inner">
+				<div id="splash">
+					<img src="images/banner.jpg" width="900" height="260" alt="" class="image" />
+				</div>
+				<div id="page">
+					<div id="content">
+						<div class="box">
+							<h2>Welcome to Axiom</h2>
+							<img class="image alignleft" src="images/pic1.jpg" width="215" height="150" alt="" />
+							<p>
+								This is <strong>Axiom</strong>, a free, fully standards-compliant CSS template by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The images used in this template are from <a href="http://fotogrph.com/">Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it.. Have fun :)
+							</p>
+							<br class="clearfix" />
+						</div>
+						<div class="box col1">
+							<h3>Posuere cras</h3>
+							<p>
+								Diam velit rutrum iaculis molestie massa dolor tortor. Imperdiet fringilla condimentum accumsan accumsan.
+							</p>
+							<ul class="list">
+								<li class="first"><a href="#">Semper lacinia nisl quisque</a></li>
+								<li><a href="#">Vulputate consectetur consequat augue</a></li>
+								<li><a href="#">Montes odio nulla lacus</a></li>
+								<li><a href="#">Natoque dolor curabitur augue</a></li>
+								<li class="last"><a href="#">Gravida imperdiet neque placerat</a></li>
+							</ul>
+						</div>
+						<div class="box col2">
+							<h3>Neque varius</h3>
+							<img class="image aligntop" src="images/pic2.jpg" width="430" height="155" alt="" />
+							<p>
+								Rutrum quis ultricies nullam at purus accumsan penatibus. Malesuada penatibus non nulla quam rutrum. Imperdiet integer nascetur cursus. Quis felis adipiscing leo penatibus interdum ac fusce.
+							</p>
+						</div>
+						<br class="clearfix" />
+					</div>
+				</div>
+			</div>
+			<div id="page-bottom">
+				<div id="page-bottom-content">
+					<h3>Blandit sed luctus</h3>
+					<p>
+						Cras luctus mi posuere rutrum. Elementum ipsum semper nulla iaculis adipiscing leo ultrices. Libero erat vivamus sagittis volutpat aenean elit. Semper diam purus justo commodo amet. Laoreet dignissim nisl varius. Tempor consequat ridiculus porta proin convallis praesent curabitur. Ligula nisl facilisis lectus. Euismod lobortis orci ridiculus scelerisque. Phasellus tortor morbi sed felis proin. Elit non risus consectetur primis. Sapien libero pharetra mattis nisl praesent.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			&copy; Untitled | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a> | Images by <a href="http://fotogrph.com/">Fotogrph</a>
+		</div>
+	</body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <!--
 Design by TEMPLATED
 http://templated.co
@@ -9,16 +9,19 @@ Description: A two-column, fixed-width design with a bright color scheme.
 Version    : 1.0
 Released   : 20120729
 -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<title>Axiom by TEMPLATED</title>
+		<title>My Website</title>
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.1/simplelightbox.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-58331.js"></script>
 	</head>
-	<body>
+	<body style="font-family: setofont;">
 		<div id="wrapper">
 			<div id="header">
 				<div id="logo">
@@ -26,25 +29,31 @@ Released   : 20120729
 				</div>
 				<div id="menu">
 					<ul>
-						<li class="first current_page_item"><a href="#">Homepage</a></li>
-						<li><a href="#">Photos</a></li>
-						<li><a href="#">Blog</a></li>
+						<li class="first current_page_item"><a href="#">Home</a></li>
+						<li><a href="#">Games</a></li>
 						<li><a href="#">About</a></li>
-						<li><a href="#">Links</a></li>
 						<li class="last"><a href="#">Contact</a></li>
 					</ul>
 					<br class="clearfix" />
 				</div>
 			</div>
 			<div id="inner">
-				<div id="splash">
+				<div id="splash" class="carousel js-flickity">
 					<img src="images/banner.jpg" width="900" height="260" alt="" class="image" />
+					<img src="images/view01.jpg" width="900" height="260" alt="" class="image" />
 				</div>
 				<div id="page">
 					<div id="content">
 						<div class="box">
 							<h2>Welcome to Axiom</h2>
-							<img class="image alignleft" src="images/pic1.jpg" width="215" height="150" alt="" />
+							<div class="lightbox">
+								<a href="images/pic1.jpg">
+									<img class="image alignleft" src="images/pic1.jpg" width="215" height="150" alt="" />
+								</a>
+								<a href="images/view01.jpg" style="display: none;">
+									<img class="image alignleft" src="images/view01.jpg" width="215" height="150" alt="" />
+								</a>
+							</div>
 							<p>
 								This is <strong>Axiom</strong>, a free, fully standards-compliant CSS template by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The images used in this template are from <a href="http://fotogrph.com/">Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it.. Have fun :)
 							</p>
@@ -87,4 +96,10 @@ Released   : 20120729
 			&copy; Untitled | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a> | Images by <a href="http://fotogrph.com/">Fotogrph</a>
 		</div>
 	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.1/simple-lightbox.js"></script>
+	<script>
+		var lightbox = $('.lightbox a').simpleLightbox();
+	</script>
 </html>

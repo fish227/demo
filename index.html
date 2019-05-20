@@ -15,7 +15,7 @@ Released   : 20120729
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<title>My Website</title>
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.min.css" rel="stylesheet" type="text/css" />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.1/simplelightbox.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
@@ -74,7 +74,14 @@ Released   : 20120729
 						</div>
 						<div class="box col2">
 							<h3>Neque varius</h3>
-							<img class="image aligntop" src="images/pic2.jpg" width="430" height="155" alt="" />
+							<div class="lightbox-last_box carousel js-flickity">
+								<a href="images/pic2.jpg">
+									<img class="image aligntop" src="images/pic2.jpg" width="430" height="155" alt="" />
+								</a>
+								<a href="images/pic1.jpg" style="display:none;">
+									<img class="image aligntop" src="images/pic1.jpg" width="430" height="155" alt="" />
+								</a>
+							</div>
 							<p>
 								Rutrum quis ultricies nullam at purus accumsan penatibus. Malesuada penatibus non nulla quam rutrum. Imperdiet integer nascetur cursus. Quis felis adipiscing leo penatibus interdum ac fusce.
 							</p>
@@ -100,6 +107,8 @@ Released   : 20120729
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.1/simple-lightbox.js"></script>
 	<script>
-		var lightbox = $('.lightbox a').simpleLightbox();
-	</script>
+		$('.lightbox a').simpleLightbox();
+		$('.lightbox-last_box a').simpleLightbox();
+	</script>	
+	
 </html>

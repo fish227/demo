@@ -31,6 +31,11 @@ a:hover {
 a:focus {
   text-decoration: none;
 }
+.message {
+  margin: 0 2.85rem;
+  resize: none;
+  margin-top: .4rem;
+}
 .btn,
 a.btn {
   -webkit-transition: all 0.4s ease-in-out;
